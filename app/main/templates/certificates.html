@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Certificates - exabyte 2024</title>
+</head>
+<body>
+    <ul>
+        {% for cert in certs.keys() %}
+            <li>{{ cert }}: <a href="{{ url_for('certs.certificate', filename=certs[cert]) }}">Click here to download</a></li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('certs.remove_participant') }}">Click here to logout.</a>
+</body>
+</html>
