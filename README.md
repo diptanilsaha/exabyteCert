@@ -162,4 +162,5 @@ The Application will run on 5000 port by default.
 To run on your preferred port, replace `PORT_NUMBER` with your preferred port number and run:
 
 ```bash
-$ flask run --port=<PORT_NUMBER>```
+$ flask run --port=<PORT_NUMBER>
+```
